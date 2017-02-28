@@ -1,15 +1,17 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'app');
 
 var config = {
   entry: {
-    bundle: APP_DIR + '/index.jsx'
+    bundle: [
+      'webpack-dev-server/client?http://localhost:1337',
+      APP_DIR + '/index.jsx'
+    ]
   },
   output: {
-    filename: BUILD_DIR + '/[name].js'
+    filename: 'build/[name].js'
   },
   module : {
     loaders : [

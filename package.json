@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "webpack-dev-server --hot --progress --colors"
+    "server": "webpack-dev-server --hot --progress --colors --port 1337"
   },
   "author": "Kenny van der Horst",
   "license": "ISC",
