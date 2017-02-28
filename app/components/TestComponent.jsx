@@ -16,7 +16,7 @@ class TestComponent extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.add}>Like Me</button>
+        <button onClick={this.add}>Button</button>
         TestComponent count: {this.state.count}
       </div>
     );
